@@ -12,7 +12,7 @@ $('document').ready(function(){
     $("phs").css("background-color", "red");
     
     $("p").css("color", "black");
-    
+       
     $('div:last p:nth-child(3)').css('background-color', 'red');
      
     $('p:last').css('color', 'red');
