@@ -7,15 +7,15 @@
 $('document').ready(function(){
     $(".gio").css("background-color", "green");
     
-    $("p").css("color", "white");
+    $("p").css("color", "black");
     
-    $("phs").css("background-color", "red");
+    $(".phs").css("background-color", "red");
     
     $("p").css("color", "black");
        
     $('div:last p:nth-child(3)').css('background-color', 'red');
      
-    $('p:last').css('color', 'red');
+    $('p:last').css('color', 'white');
     
     $('p:gt(4)').css('border-style', 'solid');
     
@@ -25,7 +25,28 @@ $('document').ready(function(){
     
     $("h1").bind('mouseover', mouseOverme).bind('mouseout', mouseOverme);
     
+    $('#replaceWText').bind('click', replaceWText);
+    
+    $('#randPara').bind('click',addAPara);
+    
+    $('#removePara').bind('click', removeAPara);
+    
+    
+    
+    
 });
+
+function addAPara(){
+    $('#randPara p:last').remove();
+}
+
+function addAPara(){
+    $('#randPara').append('<p>ADDED</p>');
+}
+
+function replaceWText(){
+    $('#replaceWText').text('Replaced');
+}
 
 function mouseOverMe(){
     $("h1").html("Computer Class");
@@ -34,3 +55,4 @@ function mouseOverMe(){
 function mouseOutMen(){
     $('h1').html('Gio is awesome');
 }
+
