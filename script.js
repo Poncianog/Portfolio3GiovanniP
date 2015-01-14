@@ -7,13 +7,9 @@
 $('document').ready(function(){
     $(".gio").css("background-color", "green");
     
-    $("p").css("color", "black");
-    
-    $(".phs").css("background-color", "red");
-    
-    $("p").css("color", "black");
+    $("p").css("color", "white");
        
-    $('div:last p:nth-child(3)').css('background-color', 'red');
+    $('div:last p:nth-child(3)').css('background-color', 'green');
      
     $('p:last').css('color', 'white');
     
@@ -40,7 +36,7 @@ function addAPara(){
     $('#randPara p:last').remove();
 }
 
-function addAPara(){
+function removeAPara(){
     $('#randPara').append('<p>ADDED</p>');
 }
 
@@ -52,7 +48,7 @@ function mouseOverMe(){
     $("h1").html("Computer Class");
 }
 
-function mouseOutMen(){
+function mouseOutMe(){
     $('h1').html('Gio is awesome');
 }
 
