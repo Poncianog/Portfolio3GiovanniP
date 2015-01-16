@@ -4,51 +4,70 @@
  * and open the template in the editor.
  */
 
-$('document').ready(function(){
-    $(".gio").css("background-color", "green");
+$("document").ready(function(){
+    $(".gio").css("background-color", "green"); 
     
     $("p").css("color", "white");
-       
-    $('div:last p:nth-child(3)').css('background-color', 'green');
-     
-    $('p:last').css('color', 'white');
     
-    $('p:gt(4)').css('border-style', 'solid');
-    
-    $('p:first').css({'background-color':'cyan', 'color':'black'});
-    
-    //$('div p:nth-child(1)').css('background-color', 'black');
-    
-    $("h1").bind('mouseover', mouseOverme).bind('mouseout', mouseOverme);
+    //$("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
+    $("h1").bind("click", mouseClick);   
     
     $('#replaceWText').bind('click', replaceWText);
     
-    $('#randPara').bind('click',addAPara);
+    $('#addPara').bind('click', addAPara);
     
-    $('#removePara').bind('click', removeAPara);
+    $('#removePara').bind('click', removeAPara);   
     
+    $('#hide').bind('click', hideThePage);
     
+    $('#show').bind('click', showThePage);
     
+    $('#superHumans').accordian({header: "h3"});
     
+    $('#superHumans').css('width', '400px');
+    
+    $('h3')
 });
 
-function addAPara(){
-    $('#randPara p:last').remove();
+function hideThePage(){
+    $('#show').css('visibility', 'visible');
+    
+    $('div').hide('slide', {}, 2500);
+    
+    $('#show').show('fold', {}, 2500);
+}
+
+function showThePage(){
+    $('div').show('fold', {}, 2500);
+
 }
 
 function removeAPara(){
+    $('#randPara p:last').remove();
+}
+
+function addAPara(){
     $('#randPara').append('<p>ADDED</p>');
 }
 
 function replaceWText(){
-    $('#replaceWText').text('Replaced');
+    $('#replaceWText').text('Goodbye');
 }
 
-function mouseOverMe(){
-    $("h1").html("Computer Class");
+function mouseOverMe (){
+    $("h1").html("Get noscoped");
 }
 
-function mouseOutMe(){
-    $('h1').html('Gio is awesome');
+function mouseOverMe (){
+    $("h1").html("I am a king");
+}
+
+function mouseClick (){
+    
+    $("p").html("LizardSquad is Hacking You");
+}
+
+function addAPara() {
+    $('#randPara').append('Solami');
 }
 
