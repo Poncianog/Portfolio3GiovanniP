@@ -7,7 +7,7 @@
 $("document").ready(function(){
     $(".gio").css("background-color", "green"); 
     
-    $("p").css("color", "white");
+    $("p").css("color", "black");
     
     //$("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
     $("h1").bind("click", mouseClick);   
@@ -26,7 +26,7 @@ $("document").ready(function(){
     
     $('#superHumans').css('width', '400px');
     
-    $('h3')
+    $('h3').css('background', 'red');
 });
 
 function hideThePage(){
