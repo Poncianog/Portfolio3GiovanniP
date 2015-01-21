@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 
+
 $("document").ready(function(){
     $(".gio").css("background-color", "green"); 
     
@@ -28,9 +29,11 @@ $("document").ready(function(){
     $('#superHumans').css('width', '400px');
     
     $('h3').css('background', 'white');
+    
+ 
 });
 
-//comment// this hides the page and makes it slide over so the page is no longer visible
+//comment// this hides the page and makes it slide over so the page is no longer visible.
 function hideThePage(){
     $('#show').css('visibility', 'visible');
     
