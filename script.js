@@ -7,8 +7,8 @@
 $("document").ready(function(){
     $(".gio").css("background-color", "green"); 
     
-    $("p").css("color", "white");
-    $("h3").css("color", "white");
+    $("p").css("color", "black");
+    $("h3").css("color", "black");
     
     //$("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
     $("h1").bind("click", mouseClick);   
@@ -23,23 +23,24 @@ $("document").ready(function(){
     
     $('#show').bind('click', showThePage);
     
-    $('#superHumans').accordian({header: "h3"});
+    $('#superHumans').accordion({header: "h3"});
     
     $('#superHumans').css('width', '400px');
     
     $('h3').css('background', 'white');
 });
 
+//comment// this hides the page and makes it slide over so the page is no longer visible
 function hideThePage(){
     $('#show').css('visibility', 'visible');
     
     $('div').hide('slide', {}, 2500);
     
-    $('#show').show('fold', {}, 2500);
+    $('#show').show('explode', {}, 2500);
 }
 
 function showThePage(){
-    $('div').show('fold', {}, 2500);
+    $('div').show('explode', {}, 2500);
 
 }
 
