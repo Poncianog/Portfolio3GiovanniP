@@ -6,6 +6,7 @@
 
 
 $("document").ready(function(){
+    //comment// this makes the div class  "gio" change its background-color.
     $(".gio").css("background-color", "green"); 
     
     $("p").css("color", "black");
@@ -42,6 +43,7 @@ function hideThePage(){
     $('#show').show('explode', {}, 2500);
 }
 
+//comment// When you click showThePage the animation will pop up with an explode animation.
 function showThePage(){
     $('div').show('explode', {}, 2500);
 
@@ -55,10 +57,13 @@ function addAPara(){
     $('#randPara').append('<p>ADDED</p>');
 }
 
+//comment// click on the text hi and will be replace with the text Goodbye.
+
 function replaceWText(){
     $('#replaceWText').text('Goodbye');
 }
 
+//comment// Hover Over h1 and get the animation Get noscoped.
 function mouseOverMe (){
     $("h1").html("Get noscoped");
 }
